@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#task-input {
+    width: 50%;
+    height: 30px;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#add-task-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-task-btn:hover {
+    background-color: #3e8e41;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+#task-list li span {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#task-list li span:hover {
+    text-decoration: line-through;
+}body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#task-input {
+    width: 50%;
+    height: 30px;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#add-task-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+#add-task-btn:hover {
+    background-color: #3e8e41;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+#task-list li span {
+    font-size: 18px;
+    cursor: pointer;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+#task-list li span:hover {
+    text-decoration: line-through;
+    animation: underline 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes underline {
+    0% {
+        text-decoration: none;
+    }
+    100% {
+        text-decoration: line-through;
+    }
+}
